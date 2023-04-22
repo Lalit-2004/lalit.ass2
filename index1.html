@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #street {
+        margin: auto;
+        padding: auto;
+      }
+      .container {
+        background-color: rgb(129, 68, 145);
+        border: 12px solid rgb(25, 25, 25);
+        border-radius: 7px;
+        width: 800px;
+        margin: 40px 1200px;
+        padding: 40px 40px;
+        font-family: "Anuphan", sans-serif;
+        font-weight: bold;
+        font-size: larger;
+        color: rgb(17, 17, 17);
+        align-self: right;
+        background-color: rgba(212, 76, 180, 0.192);
+      }
+      #submit {
+        background-color: rgb(11, 11, 11);
+        font-family: "Anuphan", sans-serif;
+        font-weight: bold;
+        color: white;
+        border-radius: 2px;
+        margin: auto;
+        padding: auto;
+        cursor: pointer;
+        font-size: larger;
+      }
+      #submit:hover {
+        background-color: blueviolet;
+      }
+      .address {
+        border: 6px solid black;
+        border-radius: 6px;
+        background-color: rgba(212, 76, 180, 0.192);
+      }
+      .rating {
+        border: 6px solid black;
+        border-radius: 6px;
+     font-size: larger;
+      }
+      #r1 {
+        float: left;
+      }
+      .name {
+        border: 6px solid black;
+        border-radius: 6px;
+      }
+      body {
+        background-image: url("https://media.istockphoto.com/vectors/modern-flat-design-isometric-concept-of-online-shopping-for-banner-vector-id1024208722?k=6&m=1024208722&s=170667a&w=0&h=YUQLuXK_fi19QFHIkQpIm5AHo2OAxvHtoztrYMLEE7A=");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 34px 35px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body bgcolor="blueviolet" class="img">
+    <div class="container">
+      <form action="thanky" method="post">
+        <fieldset class="name">
+          <legend>Name section:</legend>
+        
+            <label for="First Name">First Name:</label>
+            <input
+              type="text"
+              name="First Name"
+              id="First Name"
+              placeholder="Enter Your First Name"
+              style="height: 40px"
+              ;
+              style="width: 100px"
+              ;
+              value
+              required
+            />
+            <label for="Last Name">Last Name:</label>
+            <input
+              type="text"
+              name="Last Name"
+              id="Last Name"
+              placeholder="Enter Your Last Name"
+              style="height: 40px"
+              ;
+              style="width: 100px"
+              ;
+              value
+              required
+            /><br /><br />
+            <label for="Contact Number">Contact Number:</label>
+            <input
+              type="number"
+              name="Contact Number"
+              id="Contact Number"
+              pattern="[1-9]{10}"
+              placeholder="enter your 10 digit contact number"
+              style="height: 40px"
+              ;
+              style="width: 100px"
+              ;
+              value
+              required>
+          <br/><br />
+          
+        </fieldset>
+        <fieldset class="address">
+          <legend>Address section:</legend>
+        
+            <label for="Pin">Pin:</label>
+            <input
+              type="number"
+              id="Pin"
+              style="height: 40px"
+              ;
+              style="width: 100px"
+              ;
+             value required
+            /><br /><br />
+            <label for="City">City:</label>
+            <input
+              type="text"
+              id="City"
+              style="height: 40px"
+              ;
+              style="width: 100px"
+              ; value required
+            />
+            <label for="Select State">Select State:</label>
+            <select
+              name="state"
+              id="Select State"
+              style="height: 40px"
+              ;
+              style="width: 100px"
+              ;
+             value required
+            >
+              <option value="">Select state</option>
+              <option value="AN">Andaman and Nicobar Islands</option>
+              <option value="AP">Andhra Pradesh</option>
+              <option value="AR">Arunachal Pradesh</option>
+              <option value="AS">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CH">Chandigarh</option>
+              <option value="CT">Chhattisgarh</option>
+              <option value="DN">Dadra and Nagar Haveli</option>
+              <option value="DD">Daman and Diu</option>
+              <option value="DL">Delhi</option>
+              <option value="GA">Goa</option>
+              <option value="GJ">Gujarat</option>
+              <option value="HR">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JK">Jammu and Kashmir</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="LA">Ladakh</option>
+              <option value="LD">Lakshadweep</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OR">Odisha</option>
+              <option value="PY">Puducherry</option>
+              <option value="PB">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="TG">Telangana</option>
+              <option value="TR">Tripura</option>
+              <option value="UP">Uttar Pradesh</option>
+              <option value="UT">Uttarakhand</option>
+              <option value="WB">West Bengal</option></select
+            ><br /><br />
+            <textarea
+              rows="4"
+              cols="40"
+              placeholder="Street"
+              id="street"
+            ></textarea>
+          
+        </fieldset>
+        <fieldset class="rating">
+          <legend>Rating Section</legend>
+              <p>Quality of Product recieved:</p>
+              Excellent<input type="radio" id="r1" name="rating" /><br /><br />
+              Good <input type="radio" id="r1" name="rating" /> <br /><br />
+              Bad <input type="radio" id="r1" name="rating" />
+              <p>Value for Money:</p>
+              Excellent <input type="radio" id="r1" name="rating1" /> <br /><br />
+              Good <input type="radio" id="r1" name="rating1" /> <br /><br />
+              Bad <input type="radio" id="r1" name="rating1" />
+              <p>Delievery:</p>
+              Excellent <input type="radio" id="r1" name="rating2" /> <br /><br />
+              Good <input type="radio" id="r1" name="rating2" /> <br /><br />
+              Bad <input type="radio" id="r1" name="rating2" /> <br /><br >
+           
+        </fieldset>
+        <input type="submit" value="submit" name="submit" id="submit">     
+  </form>
+    </div>
+  </body>
+</html>
